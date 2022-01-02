@@ -28,4 +28,5 @@ h1{
 .input, .push {
     padding: 5px;
     border: 1px solid green;
+    margin : 1px;
 }
