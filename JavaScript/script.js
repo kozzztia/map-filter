@@ -80,3 +80,88 @@ let main = document.querySelector('.main');
 //     })
 //     console.log(c4);
 // }
+
+// ------------------------------------task 5
+// let b1 = [3, 14, 15, 92];
+
+// push.onclick = function () {
+//     let b1res = b1.filter(function (item) {
+//         if (item % 2 == 0) return item
+//     })
+//     console.log(b1res);
+// }
+// -----------------------------------task 6
+
+// let b6 = [3, 14, 15, 92, "6", "5", "hello", 32]
+
+// push.onclick = function () {
+//     let b6res = b6.filter(function (item) {
+//         // if (typeof item == "string") return item;
+//         if (typeof item == "number") return item;
+//     })
+//     b6 = b6res
+//     console.log(b6)
+// }
+
+// ---------------------------------task 7
+
+// let b7 = ["php-7", "html", "css", 92, "6", "5", "hello", 32]
+
+// push.onclick = () => {
+//     let b7res = b7.filter((item) => {
+//         if (typeof item === "string") return item;
+//     })
+//     console.log(b7res)
+// }
+
+// ----------------------------------task8
+
+// let b8 = [3, 14, 15, 92, "6", "5", "hello", 32]
+
+// push.onclick = () => {
+//     let text = ''
+//     let b8res = b8.filter((item, index) => {
+//         if (item % 2 === 0) {
+//             text += (`${item} = ${index} <br>`);
+//             return item
+//         }
+//     })
+//     p[2].innerHTML = text;
+//     console.log(b8res)
+// }
+
+
+// -------------------------------------task 9
+
+// let b9 = [3, "hello", 4, "world", 5, "hi"]
+
+// push.onclick = () => {
+//     let string = [];
+//     let num = [];
+
+//     b9.filter((item) => {
+//         if (typeof item === "string") {
+//             string.push(item);
+//         } else {
+//             num.push(item)
+//         }
+//     })
+//     console.log(string);
+//     console.log(num);
+// }
+
+// ------------------------------------task10
+
+let b10 = [[1, 2, 3], [3, 4, 6], [4, 5, 7], [8, 9, 3]]
+
+push.onclick = () => {
+    let b10r = [];
+    b10.filter(function (arr) {
+        arr.filter(function (item) {
+            if (item === 3) {
+                b10r.push(arr);
+            }
+        })
+    })
+    console.log(b10r)
+}
